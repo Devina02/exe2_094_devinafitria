@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html style="background-color: #f2f2f2;">
+
+<head>
+  <title>Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: normal;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left: black;
+      flex-direction: column; /* Added */
+    }
+
+    form {
+      width: 400px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border: 3px solid #4e4e4e;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    form input[type="text"],
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    form input[type="submit"] {
+      background-color: transparent;
+      color: black;
+      padding: 10px 16px;
+      border: 3px solid black;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+      background-color: #ccc;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: transparent;
+      color: black;
+      border: 3px solid black;
+      border-radius: 4px;
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .form-actions button {
+      padding: 10px 16px;
+      font-size: 16px;
+      background-color: transparent;
+      color: black;
+      border: 3px solid black;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button.btn-back {
+      padding: 10px 16px;
+      font-size: 16px;
+      background-color: transparent;
+      color: black;
+      border: 3px solid black;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 25px;
+    }
+
+    button.btn-page1 {
+      margin-top: 25px;
+      padding: 10px 16px;
+      font-size: 16px;
+      background-color: transparent;
+      color: black;
+      border: 3px solid black;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Page 2</h1>
+  <div class="container">
+    <form action="">
+      <h2>Form</h2>
+
+      <label for="nama" style="font-weight: bold;">Nama:</label><br>
+      <input type="text" placeholder="Nama anda" id="name"><br><br>
+
+      <label for="birthdate" style="font-weight: bold;">Tanggal Lahir:</label><br>
+      <input type="date" id="birthdate"><br><br>
+
+      <label for="gender" style="font-weight: bold;">Jenis Kelamin:</label><br>
+      <select name="gender" id="gender">
+        <option value="">Pilih jenis kelamin</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select><br><br>
+
+      <fieldset>
+        <p style="font-weight: bold;">Kartun Favorit:</p>
+
+        <label for="sofia-the-first">
+          <input type="radio" name="kartun" id="sofia-the-first" value="Sofia the First">
+          Sofia the First
+        </label>
+
+        <label for="doraemon">
+          <input type="radio" name="kartun" id="doraemon" value="Doraemon">
+          Doraemon
+        </label>
+
+        <label for="sinchan">
+          <input type="radio" name="kartun" id="sinchan" value="Shinchan">
+          Shinchan
+        </label>
+      </fieldset>
+
+      <label for="deskripsi" style="font-weight: bold; padding-top: 20px;">Deskripsi Diri:</label>
+      <textarea placeholder="Deskripsikan diri mu disini" name="deskripsi" id="deskripsi" rows="4"
+        cols="50"></textarea><br><br>
+
+      <label for="pesan" style="font-weight: bold;">Pesan :</label>
+      <textarea placeholder="Sampaikan pesan mu disini" name="pesan" id="pesan" rows="4"
+        cols="50"></textarea><br><br>
+
+      <div class="form-actions">
+        <button type="submit" onclick="sendData(event)">Kirim</button>
+      </div>
+    </form>
+    <button class="btn-back" onclick="window.location.href='index.html'">Page 1</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="exe.js"></script>
+</body>
+
+</html>

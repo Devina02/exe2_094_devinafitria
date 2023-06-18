@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f0f0f0;
+    border: 3px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .media {
+    
+    align-items: center;
+    margin-bottom: 40px;
+  
+  }
+  
+  .media img {
+    width: 420px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .survey-button {
+    text-align: left;
+    margin-top: 40px;
+  }
+  
+  .survey-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    color: black;
+    border: 3px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
