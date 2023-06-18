@@ -30,7 +30,3 @@ function sendData(event) {
     localStorage.setItem("formData", JSON.stringify(data));
   }
   
-  function backpage() {
-    window.location.href = document.referrer;
-  }
-  
